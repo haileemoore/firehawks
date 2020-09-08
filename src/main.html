@@ -4,27 +4,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <!-- JavaScript -->
-    <!-- React -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="app.js"></script>
+    <script src="app.js" charset="utf-8"></script>
     <!-- Styling -->
     <title>Fox Valley Firehawks</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="head">
-        <h1>Fox Valley Firehawks</h1>
-        <img src="https://logos-download.com/wp-content/uploads/2019/07/Firehawk_Logo-700x592.png" class="img-fluid" alt="Fox Valley Firehawks">
-    </div>
-    <div class="container">
+<body ng-controller="PageControl as ctrl">
+  <div class="container">
+    <div class="header">
+      <h1>Fox Valley Firehawks</h1>
+      <img src="" class="img-fluid" alt="Fox Valley Firehawks">
+      <div class="topnav">
+        <nav>
+          <a href="/home">Home</a>
+          <a href="/calendar">Calendar</a>
+          <a href="/contact">Contact</a>
+        </nav>
+      </div>
+      <div ng-repeat="date in ctrl.dates">
+        <div class="view">
 
+        </div>
+      </div>
     </div>
+
+  </div>
 </body>
 
 </html>

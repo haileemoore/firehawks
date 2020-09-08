@@ -1,12 +1,9 @@
-'use strict';
-
-const e = React.createElement;
 
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            active: false
+        state = {
+            hockey: []
         };
     }
 
@@ -19,4 +16,7 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render( < App > < /App> , document.querySelector('main'))
+ReactDOM.render(
+  <App />,
+  document.querySelector('main')
+)
