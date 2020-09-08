@@ -1,3 +1,8 @@
 .head {
     text-align: center;
 }
+
+.card {
+    margin: 30px;
+    padding: 20px;
+}
