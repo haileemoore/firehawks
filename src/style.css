@@ -1,0 +1,90 @@
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: black;
+}
+
+.logo {
+  justify-content: center;
+  height: 500px;
+  width: auto;
+  padding: 20px;
+}
+
+.nav-logo {
+  height: 50px;
+  width: auto;
+}
+
+nav {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: darkgray;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+/* .carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+.carousel img {
+  align-self: center;
+  height: 400px;
+  width: auto;
+  padding: 10px;
+} */
+
+.img-fluid {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 260%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  padding: 10px;
+  height: 700px;
+  width: auto;
+  opacity: 50%;
+  background-color: white;
+}
+
+.card:hover {
+  padding: 10px;
+  height: 700px;
+  width: auto;
+  opacity: 100%;
+}
+
+td {
+  height: 90px;
+  width: 100px;
+}
+
+footer {
+  background: black;
+  color: white;
+  height: 80px;
+}
+
+p {
+  padding: 20px;
+  font-size: 20px;
+}
