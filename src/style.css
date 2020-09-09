@@ -36,11 +36,49 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
+  overflow-x: scroll;
 }
 
 .carousel img {
   align-self: center;
   height: 600px;
   width: auto;
+}
+
+.img-fluid {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  padding: 10px;
+  height: 700px;
+  width: auto;
+  opacity: 50%;
+  background-color: white;
+}
+
+.card:hover {
+  padding: 10px;
+  height: 700px;
+  width: auto;
+  opacity: 100%;
+}
+
+td {
+  height: 90px;
+  width: 100px;
+}
+
+.footer {
+  background: black;
+  color: white;
+  height: 100px;
+  width: 100%;
 }
