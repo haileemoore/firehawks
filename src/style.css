@@ -1,21 +1,22 @@
-/* body {
-    background: darkgray;
-} */
-
-.whole-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .header {
-    text-align: center;
+  background: black;
 }
 
 .logo {
-  position: relative;
+  justify-content: center;
+  height: 500px;
   width: auto;
-  height: 400px;
+  padding: 10px;
+}
+
+.nav-logo {
+  height: 50px;
+  width: auto;
+}
+
+nav {
+  width: 100%;
 }
 
 .navbar a:hover {
