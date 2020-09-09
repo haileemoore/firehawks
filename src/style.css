@@ -1,5 +1,13 @@
-.head {
+body {
+    background: black;
+}
+
+.header {
     text-align: center;
+}
+
+.navbar {
+    color: white;
 }
 
 .card {
