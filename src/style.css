@@ -1,5 +1,8 @@
 
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background: black;
 }
 
@@ -7,7 +10,7 @@
   justify-content: center;
   height: 500px;
   width: auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .nav-logo {
@@ -29,7 +32,19 @@ nav {
   font-size: 20px;
 }
 
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.carousel img {
+  align-self: center;
+  height: 600px;
+  width: auto;
+}
+
 .card {
-    margin: 30px;
-    padding: 20px;
+    margin: 10px;
 }
