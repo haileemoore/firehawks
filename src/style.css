@@ -1,4 +1,15 @@
 
+@media screen and (max-width: 600px) {
+  .header {
+    background: none;
+  }
+
+  .navbar button {
+    display: none;
+  }
+
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -8,7 +19,7 @@
 
 .logo {
   justify-content: center;
-  height: 500px;
+  height: 400px;
   width: auto;
   padding: 20px;
 }
@@ -33,44 +44,12 @@ nav {
   padding: 0 10px;
 }
 
-/* .carousel {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow-x: scroll;
-}
-
-.carousel img {
-  align-self: center;
-  height: 400px;
-  width: auto;
-  padding: 10px;
-} */
-
-.img-fluid {
-  position: relative;
-}
-
-.container {
-  position: absolute;
-  top: 260%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+h2 {
+  text-align: center;
 }
 
 .card {
-  padding: 10px;
-  height: 700px;
-  width: auto;
-  opacity: 50%;
-  background-color: white;
-}
-
-.card:hover {
-  padding: 10px;
-  height: 700px;
-  width: auto;
-  opacity: 100%;
+  margin-bottom: 20px;
 }
 
 td {
