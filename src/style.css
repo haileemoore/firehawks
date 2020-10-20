@@ -44,6 +44,10 @@ nav {
   padding: 0 10px;
 }
 
+#champs {
+  justify-content: center;
+}
+
 h2 {
   text-align: center;
 }

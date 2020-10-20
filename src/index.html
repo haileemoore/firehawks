@@ -1,218 +1,220 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Angular -->
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
-      <!-- BootstrapJS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-      <!-- JavaScript -->
-      <!-- <script src="index.js" charset="utf-8"></script> -->
-      <!-- Styling -->
-      <title>Midwest Firehawks</title>
-      <!-- BoostrapCSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-      <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
-      <div class="container-fluid">
-            <div class="header">
-              <img src="https://i.imgur.com/LKDbZDK.png" alt="Midwest Firehawks" class="logo">
-            </div>
-              <!-- NAVBAR START -->
-                  <nav class="navbar navbar-expand-sm navbar-light bg-light ">
-                    <img src="https://i.imgur.com/LKDbZDK.png" alt="Midwest Firehawks" class="nav-logo">
-                      <a class="navbar" href="/">Midwest Firehawks</a>
-                      <button class="navbar-toggler d-lg-none " type="button " data-toggle="collapse " data-target="#collapsibleNavId " aria-controls="collapsibleNavId " aria-expanded="false " aria-label="Toggle navigation ">
-                      <span class="navbar-toggler-icon "></span>
-                    </button>
-                      <div class="collapse navbar-collapse " id="collapsibleNavId ">
-                          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-                              <li class="nav-item active ">
-                                  <a class="nav-link " href="/">Home
-                                    <span class="sr-only ">(current)</span>
-                                  </a>
-                              </li>
-                              <li class="nav-item ">
-                                  <a class="nav-link " href="#card">Calendar</a>
-                              </li>
-                              <li class="nav-item ">
-                                  <a class="nav-link " href="#contact">Contact</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </nav>
-              <!-- NAVBAR END-->
-      <!-- <div class="carousel">
-        <img src="https://i.imgur.com/0fYqC5F.jpg" alt="Firehawks">
-        <img src="https://i.imgur.com/fpKadLf.jpg" alt="Firehawks">
-        <img src="https://i.imgur.com/CIpwDAd.jpg" alt="Firehawks">
-        <img src="https://i.imgur.com/9i1w31i.jpg" alt="Firehawks">
-        <img src="https://i.imgur.com/xkKRsRg.jpg" alt="Firehawks">
-      </div> -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="12" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="\assets\group_01.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\02.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\03.jpg" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\04.jpg" alt="Fourth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\05.jpg" alt="Fifth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\01.jpg" alt="Sixth slide">
-          </div>
-          <!-- BEGIN SOMERSET TOURNAMENT -->
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset94.jpg" alt="Somerset-01 slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset90.jpg" alt="Somerset-02 slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset80.jpg" alt="Somerset-03 slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset72.jpg" alt="Somerset-04 slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset67.jpg" alt="Somerset-05 slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset66.jpg" alt="Somerset-06 slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset58.jpg" alt="Somerset-07 slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset56.jpg" alt="Somerset-08 slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="\assets\somerset51.jpg" alt="Somerset-09 slide">
-          </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="\assets\somerset43.jpg" alt="Somerset-10 slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="\assets\somerset1.jpg" alt="Somerset-11 slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="\assets\somerset_champs.jpg" alt="Somerset-12 slide">
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+  <!-- BootstrapJS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript -->
+  <!-- <script src="index.js" charset="utf-8"></script> -->
+  <!-- Styling -->
+  <title>Midwest Firehawks</title>
+  <!-- BoostrapCSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="header">
+      <img src="https://i.imgur.com/LKDbZDK.png" alt="Midwest Firehawks" class="logo">
+    </div>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+      <img src="https://i.imgur.com/LKDbZDK.png" alt="Midwest Firehawks" class="nav-logo">
+      <a class="navbar" href="/">Midwest Firehawks</a>
+      <button class="navbar-toggler d-lg-none " type="button " data-toggle="collapse " data-target="#collapsibleNavId "
+        aria-controls="collapsibleNavId " aria-expanded="false " aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="collapsibleNavId ">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+          <li class="nav-item active ">
+            <a class="nav-link " href="/">Home
+              <span class="sr-only ">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#card">Calendar</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVBAR END-->
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="12" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="14"></li> -->
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="16"></li> -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\group_01-min.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\02-min.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\03-min.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\04-min.jpg" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\05-min.jpg" alt="Fifth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\01-min.jpg" alt="Sixth slide">
+        </div>
+        <!-- BEGIN SOMERSET TOURNAMENT -->
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\somerset94-min.jpg" alt="Somerset-01 slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\somerset90-min.jpg" alt="Somerset-02 slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\somerset80-min.jpg" alt="Somerset-03 slide">
+        </div>
+        <!-- <div class="carousel-item">
+            <img class="d-block img-fluid" src="\assets\imagecompressor\somerset72-min.jpg" alt="Somerset-04 slide">
+          </div> -->
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\somerset67-min.jpg" alt="Somerset-05 slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\somerset66-min.jpg" alt="Somerset-06 slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\somerset58-min.jpg" alt="Somerset-07 slide">
+        </div>
+        <!-- <div class="carousel-item">
+            <img class="d-block img-fluid" src="\assets\imagecompressor\somerset56-min.jpg" alt="Somerset-08 slide">
+          </div> -->
+        <!-- <div class="carousel-item">
+            <img class="d-block img-fluid" src="\assets\imagecompressor\somerset51-min.jpg" alt="Somerset-09 slide">
+          </div> -->
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="\assets\imagecompressor\somerset43-min.jpg" alt="Somerset-10 slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" id="champs" src="\assets\imagecompressor\somerset_champs-min.jpeg"
+            alt="Somerset-11 slide">
         </div>
       </div>
-      <!-- CALENDAR START -->
-      <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
-        <h2>Schedule</h2>
-          <div class="card" id="card">
-              <h3 class="card-header" id="monthAndYear"></h3>
-              <table class="table table-bordered table-responsive-sm" id="calendar">
-                  <thead>
-                  <tr>
-                      <th>Sun</th>
-                      <th>Mon</th>
-                      <th>Tue</th>
-                      <th>Wed</th>
-                      <th>Thu</th>
-                      <th>Fri</th>
-                      <th>Sat</th>
-                  </tr>
-                  </thead>
+    </div>
+    <!-- END CAROUSEL -->
+    <!-- CALENDAR START -->
+    <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
+      <h2>Schedule</h2>
+      <div class="card" id="card">
+        <h3 class="card-header" id="monthAndYear"></h3>
+        <table class="table table-bordered table-responsive-sm" id="calendar">
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
 
-                  <tbody id="calendar-body">
+          <tbody id="calendar-body">
 
-                  </tbody>
-              </table>
+          </tbody>
+        </table>
 
-              <div class="form-inline">
+        <div class="form-inline">
 
-                  <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">Previous</button>
+          <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">Previous</button>
 
-                  <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next</button>
-              </div>
-              <br/>
-              <form class="form-inline">
-                  <label class="lead mr-2 ml-2" for="month">Jump To: </label>
-                  <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
-                      <option value=0>Jan</option>
-                      <option value=1>Feb</option>
-                      <option value=2>Mar</option>
-                      <option value=3>Apr</option>
-                      <option value=4>May</option>
-                      <option value=5>Jun</option>
-                      <option value=6>Jul</option>
-                      <option value=7>Aug</option>
-                      <option value=8>Sep</option>
-                      <option value=9>Oct</option>
-                      <option value=10>Nov</option>
-                      <option value=11>Dec</option>
-                  </select>
+          <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next</button>
+        </div>
+        <br />
+        <form class="form-inline">
+          <label class="lead mr-2 ml-2" for="month">Jump To: </label>
+          <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+            <option value=0>Jan</option>
+            <option value=1>Feb</option>
+            <option value=2>Mar</option>
+            <option value=3>Apr</option>
+            <option value=4>May</option>
+            <option value=5>Jun</option>
+            <option value=6>Jul</option>
+            <option value=7>Aug</option>
+            <option value=8>Sep</option>
+            <option value=9>Oct</option>
+            <option value=10>Nov</option>
+            <option value=11>Dec</option>
+          </select>
 
-                <label for="year"></label>
-                <select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
-                  <option value=2020>2020</option>
-                  <option value=2021>2021</option>
-                  <option value=2022>2022</option>
-                  <option value=2023>2023</option>
-                  <option value=2024>2024</option>
-                  <option value=2025>2025</option>
-                  <option value=2026>2026</option>
-                  <option value=2027>2027</option>
-                  <option value=2028>2028</option>
-                  <option value=2029>2029</option>
-                  <option value=2030>2030</option>
-              </select>
-            </form>
-          </div>
+          <label for="year"></label>
+          <select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+            <option value=2020>2020</option>
+            <option value=2021>2021</option>
+            <option value=2022>2022</option>
+            <option value=2023>2023</option>
+            <option value=2024>2024</option>
+            <option value=2025>2025</option>
+            <option value=2026>2026</option>
+            <option value=2027>2027</option>
+            <option value=2028>2028</option>
+            <option value=2029>2029</option>
+            <option value=2030>2030</option>
+          </select>
+        </form>
       </div>
-      <!-- <button name="jump " onclick="jump() ">Go</button> -->
-      <script src="calendar.js" charset="utf-8"></script>
-      <!-- CALENDAR END -->
-      <!-- <div class="contact" id="contact"></div> -->
-      <footer>
-        <p>Midwest Firehawks</p>
-      </footer>
-    </div>  <!-- CONTAINER-FLUID DIV END -->
-  </body>
+    </div>
+    <!-- <button name="jump " onclick="jump() ">Go</button> -->
+    <script src="calendar.js" charset="utf-8"></script>
+    <!-- CALENDAR END -->
+    <!-- <div class="contact" id="contact"></div> -->
+    <footer>
+      <p>Midwest Firehawks</p>
+    </footer>
+  </div> <!-- CONTAINER-FLUID DIV END -->
+</body>
+
 </html>
